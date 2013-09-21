@@ -7,13 +7,12 @@
   <%= csrf_meta_tags %>
   <link href="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.4.5/bootstrap-editable/css/bootstrap-editable.css" rel="stylesheet"/>
   <script src="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.4.5/bootstrap-editable/js/bootstrap-editable.min.js"></script>
-
+  <%= yield :head %>
 </head>
-<body style="margin-top: 80px">
-	<div class="container">
+<body style='margin-top: 80px; background: url("assets/cityscape.jpg"); background-position: center;'>
+
 
 <%= yield %>
-</div>
 
 </body>
 </html>

@@ -28,8 +28,6 @@ GEM
     activesupport (3.2.13)
       i18n (= 0.6.1)
       multi_json (~> 1.0)
-    alchemy_api (0.1.2)
-      monster_mash (>= 0.1.1)
     arel (3.0.2)
     builder (3.0.4)
     coffee-rails (3.2.2)
@@ -40,6 +38,7 @@ GEM
       execjs
     coffee-script-source (1.6.3)
     columnize (0.3.6)
+    curb (0.8.4)
     debugger (1.6.1)
       columnize (>= 0.3.1)
       debugger-linecache (~> 1.2.0)
@@ -47,12 +46,11 @@ GEM
     debugger-linecache (1.2.0)
     debugger-ruby_core_source (1.2.3)
     erubis (2.7.0)
-    ethon (0.6.1)
-      ffi (>= 1.3.0)
-      mime-types (~> 1.18)
     execjs (2.0.1)
-    ffi (1.9.0)
     hike (1.2.3)
+    httparty (0.11.0)
+      multi_json (~> 1.0)
+      multi_xml (>= 0.5.2)
     i18n (0.6.1)
     journey (1.0.4)
     jquery-rails (3.0.4)
@@ -63,10 +61,8 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.25)
-    monster_mash (0.3.0)
-      typhoeus (>= 0.3.3)
-      typhoeus (>= 0.3.3)
     multi_json (1.8.0)
+    multi_xml (0.5.5)
     polyglot (0.3.3)
     rack (1.4.5)
     rack-cache (1.2)
@@ -109,8 +105,6 @@ GEM
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
-    typhoeus (0.6.5)
-      ethon (~> 0.6.1)
     tzinfo (0.3.37)
     uglifier (2.2.1)
       execjs (>= 0.3.0)
@@ -120,9 +114,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  alchemy_api
   coffee-rails (~> 3.2.1)
+  curb
   debugger
+  httparty
   jquery-rails
   rails (= 3.2.13)
   sass-rails (~> 3.2.3)

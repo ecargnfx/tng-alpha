@@ -1,6 +1,8 @@
 PyreBackend::Application.routes.draw do
-  get "type/:id" => "types#show"
+  get "type/:id" => "types#show", as: 'show_page'
+  match '/generate' => "home#generate", as: "generate_page"
   # The priority is based upon order of creation:
+  root to: "home#index"
   # first created -> highest priority.
 
   # Sample of regular route:
