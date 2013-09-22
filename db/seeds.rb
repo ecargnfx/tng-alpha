@@ -14,6 +14,7 @@ contact_page = Type.create(name: 'contact')
 landing = Type.create(name: 'landing')
 login_page = Type.create(name: 'login')
 ecommerce = Type.create(name: 'ecommerce')
+base = Type.create(name: 'base')
 
 # CREATE COMPONENTS
 nav = Component.create(name: 'nav', content: '<div class="navbar navbar-inverse navbar-fixed-top deletable">
@@ -259,3 +260,7 @@ ecommerce.add_component(2, header.id)
 ecommerce.add_component(3, product_row.id)
 ecommerce.add_component(4, view_cart.id)
 ecommerce.add_component(5, footer.id)
+
+base.add_component(1, header.id)
+base.add_component(2, jumbotron.id)
+base.add_component(3, footer.id)
