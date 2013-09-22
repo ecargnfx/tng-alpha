@@ -39,6 +39,8 @@ $ ->
     $('*').attr('contenteditable', 'false')
     $('.modal-backdrop').each (_, elem)->
       $(elem).remove()
+    $('.flash').each (_, elem)->
+      $(elem).remove()
     $('body').css('background-image', "none")
     $('.editable').each (_, elem)->
       $(elem).removeClass('editable')
