@@ -17,3 +17,22 @@ $ ->
   
 
   $("#save").click ->
+    url = $('#url').val()
+    $('.delete').each (_, elem)->
+      $(elem).remove()
+    $('#edit').attr('contenteditable', 'false')
+    $('.modal-backdrop').each (_, elem)->
+      $(elem).remove()
+    $('body').css('background-image', "none")
+    
+    content = document.documentElement.outerHTML
+    console.log(url)
+
+    $.ajax
+        url: '/static'
+        type: "POST"
+        data: {url: url, content: content}
+        success: (response) ->
+          content = response.content
+          if content != null
+            window.location = response.url
