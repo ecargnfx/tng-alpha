@@ -16,7 +16,7 @@
               <script type="text/javascript">
                      Aloha.ready( function() {
                             var $ = Aloha.jQuery;
-                            $('img').aloha();
+                            $('.editable').aloha();
                      });
               </script>
 
@@ -50,7 +50,7 @@
 </div>
 
 
-<div class="container" style="margin-top: 80px" class="contenteditable" contenteditable="true" id="edit">
+<div class="container" style="margin-top: 80px" class="contenteditable" contenteditable="false" id="edit">
 <% @components.each do |component| %>
   <%= raw component.content unless component.nil? %>
 <% end %>

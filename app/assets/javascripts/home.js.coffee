@@ -49,3 +49,5 @@ $ ->
           content = response.content
           if content != null
             window.location = response.url
+
+
