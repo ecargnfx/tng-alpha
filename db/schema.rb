@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130921165108) do
+ActiveRecord::Schema.define(:version => 20130922041119) do
 
   create_table "component_types", :force => true do |t|
     t.integer  "component_id"
@@ -23,6 +23,13 @@ ActiveRecord::Schema.define(:version => 20130921165108) do
 
   create_table "components", :force => true do |t|
     t.string   "name"
+    t.text     "content"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "statics", :force => true do |t|
+    t.string   "url"
     t.text     "content"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false

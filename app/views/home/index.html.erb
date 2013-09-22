@@ -3,48 +3,18 @@
 <%= stylesheet_link_tag 'bootstrap' %>
 <%= stylesheet_link_tag 'main' %>
 
-<script>
-    $(function(){
-
-        $("#typed").typed({
-            strings: ["Build me a marketing site.", "Let's make a basic webpage.", "I want an info page.","I want to start a blog.", "Make me a landing page.", "Design a login page.", "Try it out now!"],
-            typeSpeed: 30,
-            backDelay: 1700,
-            callback: function(){ foo(); }
-        });
-
-        function foo(){ return "Callback"; }
-
-    });
-</script>
-<style>
-       #typed-cursor{
-  opacity: 1;
-  font-weight: 100;
-  // add prefixes
-  animation: blink 0.7s infinite;
-}
-
-@-keyframes blink{
-  0% { opacity:1; }
-  50% { opacity:0; }
-  100% { opacity:1; }
-}
-</style>
-
-
 <div class="row" align="center" style="padding-top:75px"> 
 
-    <img src="assets/logo.png" height="200px" width="75px" style="margin-bottom:-40px">
+  <img src="assets/logo.png" height="200px" width="75px" style="margin-bottom:-40px">
 
-    <h1 style="color:#fff;font-size:96px;
+  <h1 style="color:#fff;font-size:96px;
   background: -webkit-linear-gradient(#fff, #eee);
   -webkit-background-clip: text;
   text-shadow: 0 1px 1px #000000;
   opacity: 0.9;">Pyre</h1>
 
 
-    <p style="color:#fff;font-size:18px;
+  <p style="color:#fff;font-size:18px;
   background: -webkit-linear-gradient(#fff, #eee);
   -webkit-background-clip: text;
   text-shadow: 0 1px 1px #000000;
@@ -54,41 +24,41 @@
 </div>
 
 
- <div class="row" style="padding-top:30px;padding-bottom:60px">
-                
-        <div class="col-lg-2">            
-        </div>
+<div class="row" style="padding-top:30px;padding-bottom:60px">
+  
+  <div class="col-lg-2">            
+  </div>
 
-        <div class="col-lg-8">
-            <div class="padding_wrapper">
-                        <div class="search_wrapper">
-                           
+  <div class="col-lg-8">
+    <div class="padding_wrapper">
+      <div class="search_wrapper">
+       
 
-                                
-                            <form class="search" method="post" action="<%= generate_page_path %>">
-                                <button type="submit" class="question" style="color: #ffffff;">                                       
-                                    Go! 
-                                </button>
+        
+        <form class="search" method="post" action="<%= generate_page_path %>">
+          <button type="submit" class="question" style="color: #ffffff;">                                       
+            Go! 
+          </button>
 
-                                <input placeholder="What kind of website do you want to build?  " type="text" size="20" tabindex="1" id="where" name="q" autocomplete="off" autofocus="autofocus">              
-                                <i class="icon-cross clear_input"></i>
-                                <input type="hidden" name="from_home" value="1">
+          <input placeholder="What kind of website do you want to build?  " type="text" size="20" tabindex="1" id="where" name="q" autocomplete="off" autofocus="autofocus">              
+          <i class="icon-cross clear_input"></i>
+          <input type="hidden" name="from_home" value="1">
 
-                                <img id="loading" style="display:none" src="/media/i/ajax-loader-16px-grey.gif">
-                            </form>
-                        </div>
-            </div>
-        </div>
+          <img id="loading" style="display:none" src="/media/i/ajax-loader-16px-grey.gif">
+        </form>
+      </div>
+    </div>
+  </div>
 
 
-            </div>
-        <div class="col-lg-2">
-        </div>
+</div>
+<div class="col-lg-2">
+</div>
 
-        <div class="row" style="padding-top:30px" align="center">
+<div class="row" style="padding-top:30px" align="center">
 
-            <span id="typed">
-            </span>
-        </div>
+  <span id="typed">
+  </span>
+</div>
 
 </div>

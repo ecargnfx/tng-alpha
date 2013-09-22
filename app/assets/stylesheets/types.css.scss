@@ -1,3 +1,53 @@
 // Place all the styles related to the Types controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.pace .pace-progress {
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 0;
+  height: 5rem;
+  width: 5rem;
+}
+
+.pace .pace-progress:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: .5rem;
+  content: attr(data-progress);
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 100;
+  font-size: 5rem;
+  line-height: 1;
+  text-align: right;
+  color: rgba(243, 117, 64, 0.19999999999999996);
+}
+
+#control-bar {
+	height: 55px;
+	width: 100px;
+	background: rgba(0, 0, 0, 0);
+	position: fixed;
+	float: right;
+	right: 3px;
+	bottom: 3px;
+	z-index: 9999;
+	border-radius: 5px;
+	line-height: 55px;
+
+}
+
+#control-bar button {
+	width: 80px;
+	margin: 0 10px;
+}
