@@ -29,5 +29,7 @@ glyphicons-halflings-regular.ttf: glyphicons-halflings-regular-b7248b70474d970f5
 glyphicons-halflings-regular/index.ttf: glyphicons-halflings-regular-b7248b70474d970f596df264c4f9b5ab.ttf
 glyphicons-halflings-regular.woff: glyphicons-halflings-regular-c866ecc8bb1c848e2a8557b67499891d.woff
 glyphicons-halflings-regular/index.woff: glyphicons-halflings-regular-c866ecc8bb1c848e2a8557b67499891d.woff
+bootstrap.css: bootstrap-1b13569e9620782f423d4cd3ce931750.css
+bootstrap/index.css: bootstrap-1b13569e9620782f423d4cd3ce931750.css
 jquery.min.map: jquery.min-6336c5bca4c709e809647cdfcb484d0a.map
 jquery/index.min.map: jquery.min-6336c5bca4c709e809647cdfcb484d0a.map
