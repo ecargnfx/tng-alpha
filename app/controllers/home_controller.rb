@@ -25,6 +25,7 @@ class HomeController < ApplicationController
       type = Type.find_by_name('ecommerce')
     else
       type = Type.find_by_name('base')
+      flash[:notice] = "We couldn't work out what you wanted, but here's a basic layout to get started."
     end
 
     redirect_to show_page_path(type.id)
