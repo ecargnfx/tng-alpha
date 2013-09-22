@@ -4,7 +4,7 @@ class HomeController < ApplicationController
   def generate
     alchemy = AlchemyAPI.new("2094dd01fd7cbceb7e1bb916840e40e81f25d16f")
     results = alchemy.textGetRankedKeywords(params[:q])
-    marketing = ['marketing', 'web page', 'webpage', 'info', 'information', 'informative', 'business', 'advertise', 'advertisement', 'advertis']
+    marketing = ['marketing', 'web page', 'webpage', 'info', 'information', 'informative', 'business', 'advertise', 'advertisement', 'advertis', 'event', 'promot']
     blog = ['blog', 'post', 'blog post', 'journal', 'timeline', 'diary', 'list']
     contact = ['contact', 'message', 'about', 'email']
     landing = ['landing', 'splash', 'customer discovery', 'teaser']
