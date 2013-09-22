@@ -23,6 +23,8 @@ class HomeController < ApplicationController
       type = Type.find_by_name('login')
     elsif (checkForType results, ecommerce)
       type = Type.find_by_name('ecommerce')
+    else
+      type = Type.find_by_name('base')
     end
 
     redirect_to show_page_path(type.id)
