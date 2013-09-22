@@ -46,7 +46,7 @@ PyreBackend::Application.configure do
   # config.action_controller.asset_host = "http://assets.example.com"
 
   # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
-  # config.assets.precompile += %w( search.js )
+  config.assets.precompile += %w( search.js citiscape.jpg logo.png rails.png application.js home.js.coffee hover.js pace.js static.js.coffee typed.js typed.js.coffee application.css bootstrap-cerulean.css home.css.scss main.css static.css.scss style.css types.css.scss)
 
   # Disable delivery errors, bad email addresses will be ignored
   # config.action_mailer.raise_delivery_errors = false
