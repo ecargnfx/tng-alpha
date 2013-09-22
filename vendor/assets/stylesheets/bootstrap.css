@@ -5589,10 +5589,6 @@ button.close {
   -webkit-appearance: none;
 }
 
-.modal-open {
-  overflow: hidden;
-}
-
 body.modal-open,
 .modal-open .navbar-fixed-top,
 .modal-open .navbar-fixed-bottom {
