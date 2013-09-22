@@ -16,7 +16,7 @@ login_page = Type.create(name: 'login')
 ecommerce = Type.create(name: 'ecommerce')
 
 # CREATE COMPONENTS
-nav = Component.create(name: 'nav', content: '<div class="navbar navbar-inverse navbar-fixed-top">
+nav = Component.create(name: 'nav', content: '<div class="navbar navbar-inverse navbar-fixed-top deletable">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -36,27 +36,27 @@ nav = Component.create(name: 'nav', content: '<div class="navbar navbar-inverse 
       </div>
     </div>')
 
-jumbotron = Component.create(name: 'jumbotron', content: '<div class="jumbotron">
-        <h1 class="editable">Look at me.</h1>
-        <p class="editable">Your description goes here. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-        <p class="editable">Interested? Find out more!</p>
-        <p class="editable">
+jumbotron = Component.create(name: 'jumbotron', content: '<div class="jumbotron editable deletable">
+        <h1>Look at me.</h1>
+        <p>Your description goes here. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <p>Interested? Find out more!</p>
+        <p>
           <a class="btn btn-lg btn-primary" href="../../components/#navbar">More info »</a>
         </p>
       </div>')
 
-footer = Component.create(name: 'footer', content: '<div class="container" style="padding-bottom:100px">
+footer = Component.create(name: 'footer', content: '<div class="container deletable" style="padding-bottom:100px">
     </div><footer align="center">
         <p class="editable">© 2013 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
     </footer>')
 
-column = Component.create(name: 'column', content: '<div class="col-lg-4">
+column = Component.create(name: 'column', content: '<div class="col-lg-4 deletable">
           <h2 class="editable">Heading</h2>
           <p class="editable">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
           <p class="editable"><a class="btn btn-primary" href="#">View details »</a></p>
         </div>')
 
-login = Component.create(name: 'login', content: '<div class="container">
+login = Component.create(name: 'login', content: '<div class="container deletable">
 
       <form class="form-signin" style="max-width: 330px; padding: 15px; margin: 0 auto">
         <h2 class="form-signin-heading editable">Please sign in</h2>
@@ -70,7 +70,7 @@ login = Component.create(name: 'login', content: '<div class="container">
 
     </div>')
 
-notify_form = Component.create(name: 'notify-form', content: '<div class="container">
+notify_form = Component.create(name: 'notify-form', content: '<div class="container deletable">
 
       <div class="row">
 

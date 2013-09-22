@@ -19,11 +19,14 @@ $ ->
   foo = ->
     "Callback"
   $("#typed").typed
-    strings: ["Build me a marketing site.", "Let's make a basic webpage.", "I want an info page.", "I want to start a blog.", "Make me a landing page.", "Design a login page.", "Try it out now!"]
+    strings: ["Build me a marketing site.", "I want to start a blog.", "Make me a landing page.", "I need a contact page", "I need a page for customer discovery", "Design a login page.", "I want to start an ecommerce website", "Try it out now!"]
     typeSpeed: 30
     backDelay: 1700
     callback: ->
       foo()
+
+  $('.deletable').hover (e)->
+    delete_button = '<a href="#" style="height: 5px; width: 5px; border-radius:10px; background: #FF0000; color: #000000;" class="delete">x</a>'
 
   $('#deploy').click ->
   	$('#myModal').modal()
