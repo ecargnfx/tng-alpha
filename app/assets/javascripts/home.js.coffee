@@ -3,6 +3,19 @@
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 
 $ ->
+  
+  $('#intent').submit (event) ->
+      formId = this.id
+      form = this
+      mySpecialFunction(formId)
+
+      event.preventDefault()
+
+      setTimeout (->
+        form.submit()
+      ), 100000 
+
+
   foo = ->
     "Callback"
   $("#typed").typed
