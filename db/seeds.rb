@@ -81,39 +81,6 @@ notify_form = Component.create(name: 'notify-form', content: '<div class="contai
         <div class="col-lg-4" align="center">
 
       <form class="form-signin">
-        <h2 class="form-signin-heading">Enter your info</h2>
-        <br>
-        <input type="text" class="form-control" placeholder="Full name" autofocus="">
-       <br>
-       <input type="text" class="form-control" placeholder="Email address">
-       <br>
-       <input type="text" class="form-control" placeholder="Your message">
-       <br>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Contact us!</button>
-      </form>
-
-        </div>
-
-        <div class="col-lg-4">
-
-        </div>
-
-
-    </div>
-
-    </div>')
-
-contact_form = Component.create(name: 'contact-form', content: '<div class="container">
-
-      <div class="row">
-
-        <div class="col-lg-4">
-
-        </div>
-
-        <div class="col-lg-4" align="center">
-
-      <form class="form-signin">
         <h2 class="form-signin-heading">Please enter your email</h2>
         <br>
         <input type="text" class="form-control" placeholder="Notify me when this launches!" autofocus="">
@@ -126,16 +93,46 @@ contact_form = Component.create(name: 'contact-form', content: '<div class="cont
         <div class="col-lg-4">
 
         </div>
-  <div class="container" style="padding-bottom:100px">
-    </div>
-   <footer align="center">
-        <p>© 2013 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
-    </footer>
-</div>
 
 
 
 </div>')
+
+contact_form = Component.create(name: 'contact-form', content: '<div class="container">
+
+      <div class="row">
+
+        <div class="col-lg-4">
+
+        </div>
+
+        <div class="col-lg-4" align="center">
+
+      <form class="form-signin">
+        <h2 class="form-signin-heading">Enter your info</h2>
+        <br>
+        <input type="text" class="form-control" placeholder="Full name" autofocus>
+       <br>
+       <input type="text" class="form-control" placeholder="Email address">
+       <br>
+       <input type="text" class="form-control" placeholder="Your message">
+       <br>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" >Contact us!</button>
+      </form>
+
+        </div>
+
+        <div class="col-lg-4">
+
+        </div>
+
+
+    </div>
+
+    </div> <!-- /container -->
+
+    <div class="container" style="padding-top:100px">
+    </div>')
 header = Component.create(name: 'header', content: '<div class="starter-template">
         <h1>Example Header</h1>
 <hr>
@@ -258,7 +255,7 @@ contact_page.add_component(4, footer.id)
 landing.add_component(1, jumbotron.id)
 landing.add_component(2,  notify_form.id)
 
-login_page.add_component(1, login)
+login_page.add_component(1, login.id)
 
 ecommerce.add_component(1, nav.id)
 ecommerce.add_component(2, header.id)
