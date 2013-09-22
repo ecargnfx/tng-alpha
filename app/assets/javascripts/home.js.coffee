@@ -33,10 +33,19 @@ $ ->
     url = $('#url').val()
     $('.delete').each (_, elem)->
       $(elem).remove()
-    $('#edit').attr('contenteditable', 'false')
+    $('*').attr('contenteditable', 'false')
     $('.modal-backdrop').each (_, elem)->
       $(elem).remove()
     $('body').css('background-image', "none")
+    $('.editable').each (_, elem)->
+      $(elem).removeClass('editable')
+
+    $('.aloha-editable').each (_, elem)->
+      $(elem).mahalo()
+      $(elem).removeClass('aloha-editable')
+
+    $('.aloha-editable-highlight').each (_, elem)->
+      $(elem).removeClass('aloha-editable-highlight')
     
     content = document.documentElement.outerHTML
     console.log(url)
