@@ -17,8 +17,7 @@ class AlchemyAPI
       outputMode: 'json'
     }
 
-    debugger
     response = JSON.parse(Curl.post(BASE_URL + TEXT_KEYWORDS, options).body_str)
-    return response["keywords"][0]["text"]
+    return response["keywords"].map{ |e| e["text"]}
   end
 end

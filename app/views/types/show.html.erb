@@ -1,5 +1,5 @@
 <div class="container" style="margin-top: 80px" contenteditable="true">
 <% @components.each do |component| %>
-  <%= raw component.content %>
+  <%= raw component.content unless component.nil? %>
 <% end %>
 </div>
