@@ -40,7 +40,9 @@ class HomeController < ApplicationController
     return false
   end
 
-  def index
+  def dashboard
+    @mainTitle = Trevor Rox
+    @mainDesc = Grace Rox
   end
 
   def minor
