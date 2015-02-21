@@ -11,9 +11,7 @@
  *= require_self
  *= require bootstrap
  *= require types
- *= require home
  *= require dashboard
  *= require font-awesome
  *= require animate.css
- *= require bootstrap-cerulean
  */

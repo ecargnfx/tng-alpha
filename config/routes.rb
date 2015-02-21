@@ -1,7 +1,8 @@
 PyreBackend::Application.routes.draw do
   get "type/:id" => "types#show", as: 'show_page'
   match '/generate' => "home#generate", as: "generate_page"
-  
+  get "home/dashboard"
+  get "home/minor"
   post '/static' => "static#create", as: "deploy"
   # The priority is based upon order of creation:
   root to: "home#dashboard"
