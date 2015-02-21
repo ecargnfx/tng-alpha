@@ -11,6 +11,7 @@ group :development, :test do
   gem 'sqlite3'
 end
 
+gem 'pg'
 gem 'curb'
 
 # Gems used only for assets and not required
