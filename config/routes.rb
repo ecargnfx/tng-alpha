@@ -4,7 +4,7 @@ PyreBackend::Application.routes.draw do
   
   post '/static' => "static#create", as: "deploy"
   # The priority is based upon order of creation:
-  root to: "home#index"
+  root to: "home#dashboard"
 
   get '/:url' => "static#show", as: "display_static"
 

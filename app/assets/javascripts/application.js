@@ -13,4 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
+//= require jquery-2.1.3.min.js
+//= require bootstrap-sprockets
+//= require metisMenu.js
+//= require pace.min.js
+//= require jquery.slimscroll.min.js
 //= require_tree .

@@ -39,4 +39,12 @@ class HomeController < ApplicationController
     end
     return false
   end
+
+  def index
+  end
+
+  def minor
+  end
+
+
 end
