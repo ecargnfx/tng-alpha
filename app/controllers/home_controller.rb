@@ -41,8 +41,8 @@ class HomeController < ApplicationController
   end
 
   def dashboard
-    @mainTitle = Trevor Rox
-    @mainDesc = Grace Rox
+    @mainTitle = "Trevor Rox"
+    @mainDesc = "Grace Rox"
   end
 
   def minor
