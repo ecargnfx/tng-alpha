@@ -11,7 +11,6 @@ body{
 	color:#ffffff;
 	background: -webkit-linear-gradient(#fff, #eee);
   	-webkit-background-clip: text;
-  	text-shadow: 0 1px 1px #000000;
   	opacity: 0.9;
 
 }

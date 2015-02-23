@@ -33,9 +33,13 @@ $(document).ready(function () {
         return false;
     });
 
+    // Append config box / Only for demo purpose
+//    $.get("skin-config.html", function (data) {
+//        $('body').append(data);
+//    });
+
     // minimalize menu
-    $('.navbar-minimalize').click(function (event) {
-        event.preventDefault();
+    $('.navbar-minimalize').click(function () {
         $("body").toggleClass("mini-navbar");
         SmoothlyMenu();
     })
@@ -54,21 +58,19 @@ $(document).ready(function () {
     function fix_height() {
         var heightWithoutNavbar = $("body > #wrapper").height() - 61;
         $(".sidebard-panel").css("min-height", heightWithoutNavbar + "px");
-        var windowWidth = $( window ).height();
-        $("#page-wrapper").css("min-height", windowWidth + 'px');
     }
     fix_height();
 
     // Fixed Sidebar
     // unComment this only whe you have a fixed-sidebar
-            //    $(window).bind("load", function() {
-            //        if($("body").hasClass('fixed-sidebar')) {
-            //            $('.sidebar-collapse').slimScroll({
-            //                height: 'auto',
-            //                railOpacity: 0.9,
-            //            });
-            //        }
-            //    })
+    //    $(window).bind("load", function() {
+    //        if($("body").hasClass('fixed-sidebar')) {
+    //            $('.sidebar-collapse').slimScroll({
+    //                height: '100%',
+    //                railOpacity: 0.9,
+    //            });
+    //        }
+    //    })
 
     $(window).bind("load resize click scroll", function() {
         if(!$("body").hasClass('body-small')) {
@@ -79,6 +81,22 @@ $(document).ready(function () {
     $("[data-toggle=popover]")
         .popover();
 });
+
+
+// For demo purpose - animation css script
+function animationHover(element, animation){
+    element = $(element);
+    element.hover(
+        function() {
+            element.addClass('animated ' + animation);
+        },
+        function(){
+            //wait for animation to finish before removing classes
+            window.setTimeout( function(){
+                element.removeClass('animated ' + animation);
+            }, 2000);
+        });
+}
 
 // Minimalize menu when screen is less than 768px
 $(function() {
@@ -98,19 +116,20 @@ function SmoothlyMenu() {
         // For smoothly turn on menu
         setTimeout(
             function () {
-                $('#side-menu').fadeIn(500);
+                $('#side-menu').fadeIn(400);
             }, 100);
     } else if ($('body').hasClass('fixed-sidebar')){
         $('#side-menu').hide();
         setTimeout(
             function () {
-                $('#side-menu').fadeIn(500);
+                $('#side-menu').fadeIn(400);
             }, 300);
     } else {
         // Remove all inline style from jquery fadeIn function to reset menu state
         $('#side-menu').removeAttr('style');
     }
 }
+
 
 
 

@@ -1,0 +1,11 @@
+/* Trevor Stuff */
+
+.theme img {
+	border: 1px solid #ccc;
+	-webkit-box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.2);
+	box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.2);
+}
+.theme {
+	margin-bottom:40px !important;
+}

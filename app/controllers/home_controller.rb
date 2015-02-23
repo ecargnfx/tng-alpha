@@ -41,11 +41,13 @@ class HomeController < ApplicationController
   end
 
   def dashboard
+    render :layout => "layout_2"
     @mainTitle = "Trevor Rox"
     @mainDesc = "Grace Rox"
   end
 
   def minor
+    render :layout => "layout_2"
   end
 
 

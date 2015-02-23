@@ -1,24 +1,23 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.13'
+ruby '2.1.5'
+
+gem 'rails', '4.0.2'
 gem 'bootstrap-sass', '3.2.0.0'
 gem "font-awesome-rails"
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-group :development, :test do
-  gem 'sqlite3'
-end
-
 gem 'pg'
+
 gem 'curb'
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
+  gem 'sass-rails'
+  gem 'coffee-rails'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby

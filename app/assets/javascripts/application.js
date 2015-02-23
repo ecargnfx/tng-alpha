@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
+//= require	jquery.peity.min.js
 //= require jquery-2.1.3.min.js
 //= require bootstrap-sprockets
 //= require metisMenu.js
